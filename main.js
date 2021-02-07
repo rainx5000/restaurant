@@ -1,1 +1,1 @@
-console.log("hey");
+(()=>{const e=document.querySelector("#Header"),n=document.createElement("h1");n.innerHTML="Pizza";const t=document.createElement("div"),c=document.createElement("button");c.innerHTML="Home";const o=document.createElement("button");o.innerHTML="Menu";const m=document.createElement("button");m.innerHTML="About";const r=document.createElement("button");r.innerHTML="Contact",e.append(n,t),t.append(c,o,m,r)})();
