@@ -1,9 +1,7 @@
 // const message = console.log('home')
 
-function message() {
-    console.log('home')
-}
+const homeTest = 'home';
 
 export {
-    message
+    homeTest
 }

@@ -5,7 +5,38 @@
 }
 
 body {
+  background-color: white;
+}
+
+#header {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
   background-color: grey;
+}
+#header h1 {
+  color: white;
+  align-self: center;
+}
+#header .nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  margin-right: 30vw;
+  width: 40vw;
+}
+#header .nav button {
+  cursor: pointer;
+  width: 25%;
+  height: 100%;
+  font-size: 2rem;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+#header .nav button:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

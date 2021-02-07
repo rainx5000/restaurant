@@ -1,5 +1,4 @@
-$light-color: grey;
-
+$light-color: white;
 
 * {
     box-sizing: border-box;
@@ -10,4 +9,35 @@ $light-color: grey;
 
 body {
     background-color: $light-color;
+}
+
+#header {
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    background-color: grey;
+    h1 {
+        color: rgb(255, 255, 255);
+        align-self: center;
+    }
+    .nav {
+       display: flex;
+       justify-content: space-between;
+       height: 100%; 
+       display: flex;
+       margin-right: 30vw;
+       width: 40vw;
+       button {
+           cursor: pointer;
+           width: 25%;
+           height: 100%;
+           font-size: 2rem;
+           background-color: inherit;
+           outline: none;
+           border: none;
+       }
+       button:hover {
+           background-color: white;
+       }
+    }
 }
