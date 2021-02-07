@@ -1,3 +1,5 @@
+import { message } from './home.js'
+
 const header = document.querySelector('#Header');
 
 const title = document.createElement('h1');
@@ -17,5 +19,9 @@ contact.innerHTML = 'Contact';
 
 header.append(title, nav);
 nav.append(home, menu, about, contact);
+
+home.addEventListener('click', (e) => {
+    message()
+})
 
 
