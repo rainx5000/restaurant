@@ -38,27 +38,30 @@ body {
 #header .nav button:hover {
   background-color: white;
 }
+#header .nav .active {
+  background-color: red;
+}
 
 #content {
   background-color: grey;
   width: 100%;
   margin: auto;
 }
-#content .home {
+#content div {
   height: fit-content;
 }
-#content .home img {
+#content div img {
   object-fit: cover;
   width: 100%;
   height: 50vh;
   margin: auto;
 }
-#content .home h3 {
+#content div h3 {
   text-align: center;
   font-size: 4rem;
   padding-top: 6vh;
 }
-#content .home p {
+#content div p {
   font-size: 2rem;
   width: 80%;
   margin: auto;
