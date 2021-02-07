@@ -39,4 +39,31 @@ body {
   background-color: white;
 }
 
+#content {
+  background-color: grey;
+  width: 100%;
+  margin: auto;
+}
+#content .home {
+  height: fit-content;
+}
+#content .home img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+}
+#content .home h3 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 6vh;
+}
+#content .home p {
+  font-size: 2rem;
+  width: 80%;
+  margin: auto;
+  padding-top: 5vh;
+  text-indent: 5vw;
+}
+
 /*# sourceMappingURL=style.css.map */
