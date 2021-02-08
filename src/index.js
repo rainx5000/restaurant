@@ -1,8 +1,8 @@
 import { homepage } from './home.js'
-// import { homeTest } from './data.js'
+import { menu } from './data.js'
 import { aboutPage } from './about.js'
 import { contactTest } from './contact.js'
-import { menuTest } from './menu.js'
+import { menuPage } from './menu.js'
 import { title, nav } from './header.js';
 
 const header = document.querySelector('#header');
@@ -10,10 +10,12 @@ const content = document.querySelector('#content');
 
 header.append(title, nav);
 
+console.log(menuPage);
+
 
 const tabs = (() => {
-    // let active = active();
     content.append(homepage);
+    homepage.classList.add('home')
     nav.addEventListener('click', tabHandler)
 })()
 
@@ -39,15 +41,19 @@ function tabHandler(e) {
     switch (e.target.textContent) {
         case 'Home' :
             content.append(homepage);
+            content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
         case 'Menu' :
-            content.append(menupage);
+            content.append(menuPage);
+            content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
         case 'About' :
             content.append(aboutPage);
+            content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
         case 'Contact' :
             content.append(contactpage);
+            content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
     }
     active(e.target.textContent);
