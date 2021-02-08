@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  background-color: #e09e46;
+}
+#header h1 {
+  color: white;
+  align-self: center;
+  font-family: "Sriracha", cursive;
+  margin-left: 2vw;
+  letter-spacing: 2px;
+}
+#header .nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  margin-right: 30vw;
+  width: 40vw;
+}
+#header .nav button {
+  cursor: pointer;
+  width: 25%;
+  height: 100%;
+  font-size: 2rem;
+  background-color: inherit;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: none;
+  letter-spacing: 1.5px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#header .nav button:hover {
+  background-color: #f7deb0;
+  color: #be863c;
+  transition: all 0.2s ease-in-out;
+}
+#header .nav .active {
+  background-color: #f7deb0;
+  color: #be863c;
+}
+
+#content {
+  width: 100%;
+  height: 92vh;
+  margin: auto;
+  background: linear-gradient(#f7deb0, #e09e46);
+}
+#content .home {
+  height: fit-content;
+}
+#content .home img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  border-top: 10px solid #f7deb0;
+  border-bottom: 10px solid #f7deb0;
+}
+#content .home p {
+  font-size: 1.9rem;
+  width: 100%;
+  height: 30vh;
+  margin: auto;
+  padding: 3%;
+  text-indent: 5vw;
+  letter-spacing: 2px;
+  background-color: #e09e46;
+  color: #fff0d5;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: 0px 1px 5px black;
+  border-top: 10px solid #f7deb0;
+}
+#content .home h3 {
+  text-align: center;
+  height: 15;
+  color: brown;
+  letter-spacing: 6px;
+  text-shadow: 0px 0px 5px #f8c6a4;
+  font-size: 4rem;
+  font-family: "Sriracha", cursive;
+}
+#content .about {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4vh;
+}
+#content .about h2 {
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 2vh;
+}
+#content .about img {
+  object-fit: contain;
+  width: 50vw;
+  height: 70vh;
+}
+#content .about p {
+  width: 40vw;
+  height: fit-content;
+  font-size: 2rem;
+  text-indent: 5vw;
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  background-color: #291608;
+  border-radius: 10px;
+  color: white;
+  align-self: center;
+}
+#content .menu {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+}
+#content .menu .item-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh 0 0 10vw;
+  padding: 15px;
+  width: 20vw;
+  height: 30vh;
+  background-color: #e09e46;
+  color: #f7deb0;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px #685031;
+}
+#content .menu .item-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  border: 2px solid #f7deb0;
+  border-radius: 9px;
+}
+#content .menu .item-container h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #f7deb0;
+  color: brown;
+  letter-spacing: 1px;
+}
+#content .menu .item-container p {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+  text-shadow: 1px 10x 2px 1px black;
+}
+#content .contact {
+  display: flex;
+  justify-content: center;
+}
+#content .contact .list {
+  background-color: #f7deb0;
+  width: 50vw;
+  height: fit-content;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #e09e46;
+  padding: 10vh;
+  line-height: 2;
+  border-radius: 0 0 10px 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
