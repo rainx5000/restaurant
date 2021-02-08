@@ -24,8 +24,6 @@ const item = (img, name, small, medium, large) => {
     }
 }
 
-
-
 function createList (menu) {
     
     for (let el in menu) {

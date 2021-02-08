@@ -1,28 +1,22 @@
-import { homepage } from './home.js'
-import { menu } from './data.js'
-import { aboutPage } from './about.js'
-import { contactPage } from './contact.js'
-import { menuPage } from './menu.js'
+import { homepage } from './home.js';
+import { aboutPage } from './about.js';
+import { contactPage } from './contact.js';
+import { menuPage } from './menu.js';
 import { title, nav } from './header.js';
 
 const header = document.querySelector('#header');
 const content = document.querySelector('#content');
 
 header.append(title, nav);
+content.append(homepage); //home is loaded automatically first
+homepage.classList.add('home');
+nav.addEventListener('click', tabHandler);
 
-console.log(menuPage);
 
-
-const tabs = (() => {
-    content.append(homepage);
-    homepage.classList.add('home')
-    nav.addEventListener('click', tabHandler)
-})()
-
-function active(clickedBtn) {
-    const btns = Array.from(nav.children)
+function active(clickedBtn) { //on click on any of the buttons on the header would turn the btn to active
+    const btns = Array.from(nav.children);
     btns.forEach(btn => {
-        const name = btn.textContent
+        const name = btn.textContent;
         if (name == clickedBtn) {
             btn.classList.add('active')
         } else {
@@ -31,12 +25,7 @@ function active(clickedBtn) {
     })
 }
 
-
-
-// let active = homepage;
-
-
-function tabHandler(e) {
+function tabHandler(e) { //handles what is shown on each tab btn when clicked
     removeAllChildNodes(content);
     switch (e.target.textContent) {
         case 'Home' :
@@ -61,28 +50,9 @@ function tabHandler(e) {
 
 
 
-
-
-
-
-
-
-
-
-//console.log(e.target.innerHTML.toLowerCase() + 'page') 
-
-// const test = document.createElement('h3');
-// test.innerHTML = 'hello';
-// content.append(test)
-
-    // menupage.classList.add('menu')
-    // aboutpage.classList.add('about')
-    // contactpage.classList.add('contact')
-
-    function removeAllChildNodes(parent) {
-        while (parent.firstChild) {
-            parent.removeChild(parent.firstChild)
-        }
+function removeAllChildNodes(parent) { //clears the previous content after clicking another btn
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild)
     }
-    
-    
+}
+
