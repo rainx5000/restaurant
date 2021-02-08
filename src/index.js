@@ -1,7 +1,7 @@
 import { homepage } from './home.js'
 import { menu } from './data.js'
 import { aboutPage } from './about.js'
-import { contactTest } from './contact.js'
+import { contactPage } from './contact.js'
 import { menuPage } from './menu.js'
 import { title, nav } from './header.js';
 
@@ -52,7 +52,7 @@ function tabHandler(e) {
             content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
         case 'Contact' :
-            content.append(contactpage);
+            content.append(contactPage);
             content.firstChild.classList.add(`${e.target.textContent.toLowerCase()}`)
             break;
     }

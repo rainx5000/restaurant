@@ -164,5 +164,21 @@
   font-weight: 700;
   text-shadow: 1px 10x 2px 1px black;
 }
+#content .contact {
+  display: flex;
+  justify-content: center;
+}
+#content .contact .list {
+  background-color: #f7deb0;
+  width: 50vw;
+  height: fit-content;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #e09e46;
+  padding: 10vh;
+  line-height: 2;
+  border-radius: 0 0 10px 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

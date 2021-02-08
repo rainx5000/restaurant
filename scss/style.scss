@@ -176,7 +176,27 @@ body {
                 text-shadow: 1px 10x 2px 1px black;
             }
         }
-
+        
     }
+    .contact {
+        display: flex;
+        justify-content: center;
+        .list {
+            background-color: $secondary-color;
+            width: 50vw;
+            height: fit-content;
+            font-size: 3rem;
+            font-weight: 600;
+            font-family: $primary-font;
+            color: $primary-color;
+            padding: 10vh;
+            line-height: 2;
+            border-radius: 0 0 10px 10px;
+
+
+        }
+    }
+    
+
     
 }
